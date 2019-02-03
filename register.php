@@ -13,9 +13,9 @@
     $fname = ""; // First Name
     $lname = ""; // Last Name
     $em = ""; // Email
-    $em2 = "";
+    $em2 = ""; // Email 2
     $password = ""; // Password
-    $password2 = "";
+    $password2 = ""; // Password 2
     $sudate = ""; // Sign up date
     $error_array = ""; // Holds error messages
 
@@ -38,14 +38,12 @@
         //Email
         $em = strip_tags($_POST['reg_email']); // strip_tags remove html tags, it is a security
         $em = str_replace(' ', '', $em); // Remove the spaces
-        $em = ucfirst(strtolower($em)); // Lower all the case then Capitalize the first one
         $_SESSION['reg_email'] = $em;
 
         //Email
         $em2 = strip_tags($_POST['reg_email2']); // strip_tags remove html tags, it is a security
         $em2 = str_replace(' ', '', $em2); // Remove the spaces
-        $em2 = ucfirst(strtolower($em2)); // Lower all the case then Capitalize the first one
-
+        
         //Password
         $password = strip_tags($_POST['reg_password']); // strip_tags remove html tags, it is a security
         
@@ -99,7 +97,6 @@
     }
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
