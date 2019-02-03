@@ -94,6 +94,35 @@
             array_push($error_array,"Your password must be between 8 and 30 characters<br>");
         }
 
+        if(empty($error_array)){
+            $password = md5($password);  // Encrypt password before sending it to database
+
+            // Generate username by concatenating first name and last name
+            $username = strtolower($fname . "_" . $lname);
+            $check_username_query = mysqli_query($con, "SELECT username FROM users WHERE username='$username'");
+
+            $i = 0;
+            // if username exists add number to it
+            while(mysqli_num_rows($check_username_query) != 0){
+                $i++; // Add 1 to i
+                $username = $username . "_" . $i;
+                $check_username_query = mysqli_query($con, "SELECT username FROM users WHERE username='$username'");
+            }
+        
+
+            // Default profile picture
+            $rand = rand(1, 2);
+            $profile_pic = "assets/images/profile_pictures/".$rand.".png"; // TO TEST
+
+            $query = mysqli_query($con, "INSERT INTO users VALUES ('NULL', '$fname', '$lname', '$username', '$em', '$password', '$sudate', '$profile_pic', '0', '0','no', ',' )");
+        
+            array_push($error_array, "<span style='color: #14C800;'>You're all set! Goahead and login</span><br>");
+        
+            //Clear session variables when it is signed up
+            $_SESSION['reg_fname']="";
+            $_SESSION['reg_lname']="";
+            $_SESSION['reg_email']="";
+        }
     }
 
 ?>
@@ -155,7 +184,11 @@
     <br>
     <?php if(in_array("Your password must be between 8 and 30 characters<br>", $error_array)) echo "Your password must be between 8 and 30 characters<br>"; ?>
 
+    <!-- Submit -->
     <input type="submit" name="register_button" value="Register">
+    <br>
+    <?php if(in_array("<span style='color: #14C800;'>You're all set! Goahead and login</span><br>", $error_array)) echo "<span style='color: #14C800;'>You're all set! Goahead and login</span><br>"; ?>
+
 </form>
     
 </body>
