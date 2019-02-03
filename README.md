@@ -10,7 +10,7 @@ Language :
 * PHP
 * MySQL
 
-** The feature of the the application
+The feature of the the application
 * Login page
 * Status post
 * Newsfeed
