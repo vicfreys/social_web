@@ -20,4 +20,4 @@ The feature of the the application
 * And much more to define
 
 # ISSUES
-* required is written in the field from the register form
+* ~~required is written in the field from the register form~~
