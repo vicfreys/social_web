@@ -18,3 +18,6 @@ The feature of the the application
 * Chat/messaging systems
 * Friend system
 * And much more to define
+
+# ISSUES
+* required is written in the field from the register form
