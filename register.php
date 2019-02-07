@@ -21,7 +21,7 @@
 
             <div class="login_header">
                 <h1>Socialeed</h1>
-                <p>Login or Sign up</p>
+                Login or Sign up
             </div>
 
             <form action="register.php" method="POST">

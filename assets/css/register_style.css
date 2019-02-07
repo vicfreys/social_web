@@ -1,3 +1,15 @@
+@font-face
+{
+    font-family: 'Bellota-LightItalic';
+    src: url('../fonts/Bellota-LightItalic.otf');
+}
+
+@font-face
+{
+    font-family: 'Bellota-BoldItalic';
+    src: url('../fonts/Bellota-BoldItalic.otf');
+}
+
 form 
 {
     text-align: center;
@@ -12,7 +24,7 @@ html
 body
 {
     margin: 0;
-    padding: 0;
+    padding: 0; /* Remove the withe borders of the background image */
     height: 100%;
 }
 
@@ -27,6 +39,7 @@ body
 
 .login_box
 {
+    font-family: 'Bellota-LightItalic', sans-serif;
     position: relative;
     margin-right: auto;
     margin-left: auto;
@@ -41,17 +54,62 @@ body
 
 .login_header
 {
+    font-family: 'Bellota-LightItalic', sans-serif;
     width: 100%;
     height: 90px;
-    background-color: #2980b9;
+    background-color: #66c2ff;
     color: white;
     text-align: center;
-    border-radius: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 .login_header h1 
 {
+    font-family: 'Bellota-BoldItalic', sans-serif;
     margin-top: 0;
     margin-bottom: 0;
-    
+    color:#005790;
+    text-shadow: #005790 0.5px 0.5px 1px;
+    font-size: 250%;
+}
+
+/* Submit button */
+input[type="submit"]
+{
+    background-color: #66c2ff;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #66c2ff;
+    border-radius: 5px;
+    margin: 5px 0 5px 0;
+    padding: 5px 10px 5px 10px;
+    text-shadow: #005790 0.5px 0.5px 1px;
+    font-size: 100%;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    border-color: #005790;
+    border-radius: 5px;
+    text-shadow: #005790 0.8px 0.8px 5px;
+}
+
+/* Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"]
+{
+    border: 1px solid #e5e5e5;
+    margin-top: 5px;
+    width: 70%;
+    height: 35px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover
+{
+    border-color: #66c2ff;
 }
