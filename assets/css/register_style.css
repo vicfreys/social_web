@@ -28,6 +28,12 @@ body
     height: 100%;
 }
 
+a
+{
+    text-decoration: none;
+    color: #66c2ff;
+}
+
 .wrapper
 {
     background-image: url("../images/backgrounds/desktop.jpg");
@@ -49,7 +55,7 @@ body
     border: 1px solid #ededed;
     border-radius: 7px;
     padding: 5px;
-    opacity: 0.9;
+    opacity: 0.98;
 }
 
 .login_header
@@ -74,6 +80,11 @@ body
     font-size: 250%;
 }
 
+#second
+{
+    display: none;
+}
+
 /* Submit button */
 input[type="submit"]
 {
@@ -89,7 +100,7 @@ input[type="submit"]
 }
 
 input[type="submit"]:hover{
-    border-color: #005790;
+    /*border-color: #005790;*/
     border-radius: 5px;
     text-shadow: #005790 0.8px 0.8px 5px;
 }
@@ -113,3 +124,5 @@ input[type="password"]:hover
 {
     border-color: #66c2ff;
 }
+
+
