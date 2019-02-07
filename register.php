@@ -20,6 +20,7 @@
     <?php
     // Stay on the registration form
     if(isset($_POST['register_button'])){
+        // Write a script "in live"
         echo "
         <script>
             $(document).ready(function(){

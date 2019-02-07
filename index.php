@@ -1,15 +1,7 @@
 <?php 
-    // Connect the database social with php (from phpmyadmin)
-    require 'config/config.php';
-
-    //$query = mysqli_query($con, "INSERT INTO test VALUES('', 'Victor')"); // Query to insert a value Vicot (the id is autoinc hence '')
-?>
-
-<html>
-<head>
-    <title>Document</title>
-</head>
-<body>
+include("includes/header.php");
+session_destroy(); // Destroy the current session and avoid the acces after quiting
+?> 
     Hello
 </body>
 </html>
