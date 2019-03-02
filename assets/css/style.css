@@ -1,3 +1,19 @@
+@font-face
+{
+    font-family: 'Bellota-LightItalic';
+    src: url('../fonts/Bellota-LightItalic.otf');
+}
+
+@font-face
+{
+    font-family: 'Bellota-BoldItalic';
+    src: url('../fonts/Bellota-BoldItalic.otf');
+}
+
+body {
+    line-height: 17px;
+}
+
 .top_bar {
     width: 100%;
     min-width: 1050px;  /*Will stop the resizing of the bar menu */
@@ -8,6 +24,15 @@
     display: inline-flex;
 }
 
-a[href="index.php"] {
+.logo a{
+    font-family: 'Bellota-BoldItalic', sans-serif;
+    margin-left: 10px;
+    font-size: 30;
+    position: relative;
+    top: 9px;
     color: wheat;
+}
+
+a:hover {
+    text-decoration: none; /* Remove decoration when it is hovered */
 }
