@@ -1,7 +1,7 @@
 # social_web
 Social web application - Facebook clone
 
-* This personal project is to create a social network web application, such as a FB clone
+* This personal project is to create a social network web application, such as a FB clone, designed for the private circle (family, friends) to plan everything
 
 Language :
 * HTML
