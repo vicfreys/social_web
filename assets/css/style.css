@@ -1,0 +1,13 @@
+.top_bar {
+    width: 100%;
+    min-width: 1050px;  /*Will stop the resizing of the bar menu */
+    height: 40px;
+    background-color: #2980b9;
+    border-bottom: 0.25em solid #3498db;
+    margin: 0 0 10px 0;
+    display: inline-flex;
+}
+
+a[href="index.php"] {
+    color: wheat;
+}
