@@ -16,6 +16,19 @@ else {
 
 <html>
 <head>
-    <title>Document</title>
+    <title>Welcome to Socialeed</title>
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 </head>
 <body>
+
+    <div class="top_bar">
+        <div class="logo">
+            <a href="index.php">Socialeed!</a>
+        </div>
+    </div>
